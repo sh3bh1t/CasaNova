@@ -1,5 +1,5 @@
-const Review = require("/models/review.js");
-const Listing = require("/models/listing.js");
+const Review = require("../models/review.js");
+const Listing = require("../models/listing.js");
 
 // to add the particular listing related review to the DB
 module.exports.addListingReview = async (req,res)=>{
