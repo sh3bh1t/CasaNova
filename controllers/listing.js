@@ -1,5 +1,5 @@
-const Listing = require("../../CasaNova/models/listing.js");
-const forwardGeocode = require("../../CasaNova/utils/geocode.js");
+const Listing = require("/models/listing.js");
+const forwardGeocode = require("/utils/geocode.js");
 
 
 //to show all listings
