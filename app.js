@@ -62,7 +62,7 @@ const store = MongoStore.create({
     touchAfter : 7 * 24 * 3600 ,
 })
 
-store
+
 
 
 app.use(session(sessionOptions));
