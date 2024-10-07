@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const WrapAsync = require("../../CasaNova/utils/WrapAsync.js");
-const ExpressError = require("../../CasaNova/utils/ExpressError.js");
-const Listing = require("../../CasaNova/models/listing.js");
-const { listingSchemaValidation, reviewSchemaValidation } = require("../schemavalidation.js");
-const { isLoggedIn } = require("../middleware.js");
-const listingController = require("../controllers/listing.js");
+const WrapAsync = require("/utils/WrapAsync.js");
+const ExpressError = require("/utils/ExpressError.js");
+const Listing = require("/models/listing.js");
+const { listingSchemaValidation, reviewSchemaValidation } = require("/schemavalidation.js");
+const { isLoggedIn } = require("/middleware.js");
+const listingController = require("/controllers/listing.js");
 const multer  = require('multer')
-const {storage}= require("../cloudConfig.js");
+const {storage}= require("/cloudConfig.js");
 const upload = multer({ storage });
 //const fetch = require('node-fetch');
 
