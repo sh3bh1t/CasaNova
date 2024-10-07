@@ -1,4 +1,4 @@
-const User = require("/models/user.js");
+const User = require("../models/user.js");
 
 // route to signup form for user
 module.exports.renderSignUpForm =(req, res) => {
