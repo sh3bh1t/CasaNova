@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router({});
-const User = require("../../CasaNova/models/user.js");
+const User = require("../models/user.js");
 const WrapAsync = require("../utils/WrapAsync");
 const passport = require("passport");
 const { saveRedirectUrl } = require("../middleware.js");

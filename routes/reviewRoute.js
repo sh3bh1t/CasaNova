@@ -1,10 +1,10 @@
  const express=require("express");
  const router = express.Router({mergeParams : true});
- const WrapAsync = require("../../CasaNova/utils/WrapAsync.js");
- const ExpressError = require("../../CasaNova/utils/ExpressError.js");
+ const WrapAsync = require("../utils/WrapAsync.js");
+ const ExpressError = require("../utils/ExpressError.js");
  const {listingSchemaValidation, reviewSchemaValidation} = require("../schemavalidation.js");
- const Review = require("../../CasaNova/models/review.js");
- const Listing = require("../../CasaNova/models/listing.js");
+ const Review = require("../models/review.js");
+ const Listing = require("../models/listing.js");
 const { addListingReview, deleteListingReview } = require("../controllers/review.js");
  
  // REVIEWS PART

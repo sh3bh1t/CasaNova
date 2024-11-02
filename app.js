@@ -8,18 +8,18 @@ const mongoose = require("mongoose");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
-const ExpressError = require("../CasaNova/utils/ExpressError.js");
+const ExpressError = require("./utils/ExpressError.js");
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
 const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
-const User = require("../CasaNova/models/user.js")
+const User = require("./models/user.js")
 
 
-const listingsRouter = require("../CasaNova/routes/listingRoute.js");
-const reviewsRouter = require("../CasaNova/routes/reviewRoute.js");
-const usersRouter = require("../CasaNova/routes/userRoute.js");
+const listingsRouter = require("./routes/listingRoute.js");
+const reviewsRouter = require("./routes/reviewRoute.js");
+const usersRouter = require("./routes/userRoute.js");
 
 const port = 3030;
 const dbURL= process.env.ATLASDB_URL ;
