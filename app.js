@@ -20,9 +20,7 @@ const User = require("./models/user.js")
 const listingsRouter = require("./routes/listingRoute.js");
 const reviewsRouter = require("./routes/reviewRoute.js");
 const usersRouter = require("./routes/userRoute.js");
-const listingsRouter = require("./routes/listingRoute.js");
-const reviewsRouter = require("./routes/reviewRoute.js");
-const usersRouter = require("./routes/userRoute.js");
+
 
 const port = 3030;
 const dbURL= process.env.ATLASDB_URL ;
