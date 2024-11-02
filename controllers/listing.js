@@ -62,6 +62,7 @@ module.exports.saveNewToDB = async (req, res, next) => {
             req.flash("error", "Listing Does NOT Exist !");
             return res.redirect("/listings");
         }
+        console.log(listing);
         res.render("listings/showindetail.ejs", { listing });
     };
 
