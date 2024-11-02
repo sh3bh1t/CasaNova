@@ -2,7 +2,7 @@
   "engines": {
     "node": "20.16.0"
   },
-  "name": "CasaNova",
+  "name": "casa-nova",
   "version": "1.0.0",
   "main": "index.js",
   
