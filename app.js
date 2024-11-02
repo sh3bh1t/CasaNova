@@ -9,6 +9,7 @@ const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const ExpressError = require("./utils/ExpressError.js");
+const ExpressError = require("./utils/ExpressError.js");
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
 const flash = require("connect-flash");
@@ -17,6 +18,9 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user.js")
 
 
+const listingsRouter = require("./routes/listingRoute.js");
+const reviewsRouter = require("./routes/reviewRoute.js");
+const usersRouter = require("./routes/userRoute.js");
 const listingsRouter = require("./routes/listingRoute.js");
 const reviewsRouter = require("./routes/reviewRoute.js");
 const usersRouter = require("./routes/userRoute.js");
@@ -62,7 +66,7 @@ const store = MongoStore.create({
     touchAfter : 7 * 24 * 3600 ,
 })
 
-store
+
 
 
 app.use(session(sessionOptions));
