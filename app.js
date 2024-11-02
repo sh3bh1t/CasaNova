@@ -18,7 +18,7 @@ dotenv.config();
 const listingsRouter = require("./routes/listingRoute.js");
 const reviewsRouter = require("./routes/reviewRoute.js");
 const usersRouter = require("./routes/userRoute.js");
-const WrapAsync = require("./utils/WrapAsync.js");
+
 
 
 const port = 3030;
@@ -43,9 +43,7 @@ app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 
-app.get("/", ()=>{
-    res.redirect("/listings/");
-})
+
 
 const sessionOptions = {
     secret: process.env.SECRET,
